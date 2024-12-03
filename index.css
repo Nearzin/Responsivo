@@ -1,0 +1,180 @@
+/* Estilo geral do menu */
+header {
+    background-color: #222222;
+    padding: 10px 0;
+}
+
+/* Oculta o checkbox visualmente */
+.menu-toggle {
+    display: none;
+}
+
+/* Ícone do menu hambúrguer */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative; /* Necessário para o dropdown */
+    margin: 0 15px;
+}
+
+nav ul li a {
+
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ef3950;
+}
+
+/* Botão de login */
+.btn-login {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: #ef3950;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Estilo do dropdown */
+.dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute;
+    background-color: #333333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ef3950;
+}
+
+/* Mostra o submenu ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ícone do menu hambúrguer visível */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Esconde a lista de navegação por padrão */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #393939;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    /* Mostra a lista de navegação quando o checkbox está marcado */
+    .menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    /* Links centralizados no layout mobile */
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste dos tamanhos para telas muito pequenas */
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .btn-login {
+        font-size: 16px;
+    }
+}
+.products {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 10px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+    
+}
+
+.btn-comprar:hover {
+    background-color: #e74c3c;
+}
+
+.divisao{
+    color: white;
+}

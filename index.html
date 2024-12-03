@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Menu Responsivo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.gallery {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    </style>
+</head>
+<body>
+<header>
+    <input type="checkbox" name="menu-icon" class="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="logo.png" alt="Logo" width="50"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li class="dropdown">
+                <a href="#servicos" class="dropbtn">Serviços</a>
+                <ul class="dropdown-content">
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><button class="btn-login">Login</button></li>
+        </ul>
+    </nav>
+    <h2 class="divisao">Blusas</h2>
+    <section id="blusas" class="products">
+        <div class="product-item">
+            <img src="https://cdn-images.farfetch-contents.com/21/00/18/09/21001809_51109994_1000.jpg" alt="Hoodie Rick Owens">
+            <h3>Rick Owens <br> Hoodie full zip</h3>
+            <p>R$ 999,90</p>
+            <a href="blusarick.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://hypevault.co/cdn/shop/files/D6AA3B42-7CCB-4206-9EAE-AC9EFFBD445C.jpg?v=1717221163&width=1800" alt="Hoodie Chrome Hearts">
+            <br><br><br><br>
+            <h3>Chorme Hearts <br>Hoodie Pluss Cross</h3>
+            <p>De R$ 1099,90</p>
+            <a href="blusaCH.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+    </section>
+
+        <h2 class="divisao">Cintos</h2>
+        <section id="cintos" class="products">
+        <div class="product-item">
+            <img src="https://cdn-images.farfetch-contents.com/16/21/48/47/16214847_30892405_1000.jpg" alt="Cinto Ferragamo">
+            <h3>Cinto Ferragamo</h3>
+            <p>De R$ 499,90</p>
+            <a href="cintoferragamo.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://cdn-images.farfetch-contents.com/24/70/66/96/24706696_54911253_1000.jpg" alt="Cinto Amiri">
+            <h3>Cinto Amiri</h3>
+            <p>De R$ 389,90</p>
+            <a href="cintoamiri.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+    </section>
+        <h2 class="divisao">Calças</h2>
+    <section id="calcas" class="products">
+        <div class="product-item">
+            <img src="https://cdn-images.farfetch-contents.com/24/82/97/76/24829776_55275061_1000.jpg" alt="MIHARA Calça risca de giz">
+            <h3> Maison MIHARA YASUHIRO <br>Calça risca de giz </h3>
+            <p>De R$ 1049,90</p>
+            <a href="calcamihara.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://cdn-images.farfetch-contents.com/20/57/68/35/20576835_50552965_1000.jpg" alt="Rick Owens Wide leg">
+            <h3>Rick Owens <br>Calça wide leg</h3>
+            <p>De R$ 1149,90</p>
+            <a href="calcarick.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+    </section>
+        <h2 class="divisao">Tênis</h2>
+    <section id="tenis" class="products">
+
+        <div class="product-item">
+            <img src="https://s3.amazonaws.com/images.d2-store.com/AW24---rick+owens+drkshdw---DU02D2800+DOEM99811.JPG" alt="Rick owens DRKSHDW">
+            <h3>Rick Owens DRKSHDW <br>Trainer sneaker</h3>
+        
+            <p>De R$ 1099,90</p>
+            <a href="tenisrick.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://cdn-images.farfetch-contents.com/17/71/86/30/17718630_37285313_1000.jpg" alt="MIHARA blankey">
+            
+            <h3>Maison MIHARA YASUHIRO <br>Tênis Blakey com cap</h3>
+            <p>De R$ 849,90</p>
+            <a href="tenismihara.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+    </section>
+</header>
+</body>
+</html>
